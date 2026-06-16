@@ -8,7 +8,7 @@ This is a code-level post-test analysis of [Game Off 2025: Blue Sapphire Galaxy:
 
 **Key Lesson Learned:** 
 
-When the object is set to `hidden` visibility, attempting to access elements inside it results to unexpected behavior.
+When the object is set to `hidden` visibility, attempting to access elements inside it results to unexpected behavior. Use `checkVisibility()` to verify. The function returns `true` if the object is currently `visible` (not `hidden`).
 
 **Unlocked Possibilities:**
 
