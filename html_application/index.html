@@ -6477,10 +6477,14 @@ alert("iInputY: "+iInputY);
 			}
 		
 			if (inputArrayWraithMonsterWithIdCount[MONSTER_CURRENT_STATE]==WALKING_STATE) {
-				if (inputArrayWraithMonsterWithIdCount[MONSTER_POSY]+iImageFrameHeightLarge*0.75<mainImageTilePosY) {
+				//edited by Mike, 20260619
+//				if (inputArrayWraithMonsterWithIdCount[MONSTER_POSY]+iImageFrameHeightLarge*0.75<mainImageTilePosY) {
+				if (inputArrayWraithMonsterWithIdCount[MONSTER_POSY]+iImageFrameHeightLarge*0<mainImageTilePosY) {
 					inputArrayWraithMonsterWithIdCount[MONSTER_POSY]+=inputArrayWraithMonsterWithIdCount[MONSTER_STEPY];
 				}
-				else if (inputArrayWraithMonsterWithIdCount[MONSTER_POSY]>mainImageTilePosY+iImageFrameHeightLarge*0.75) {
+				//edited by Mike, 20260619
+//				else if (inputArrayWraithMonsterWithIdCount[MONSTER_POSY]>mainImageTilePosY+iImageFrameHeightLarge*0.75) {
+				else if (inputArrayWraithMonsterWithIdCount[MONSTER_POSY]>mainImageTilePosY+iImageFrameHeightLarge*0) {
 					inputArrayWraithMonsterWithIdCount[MONSTER_POSY]-=inputArrayWraithMonsterWithIdCount[MONSTER_STEPY];
 				}
 					
