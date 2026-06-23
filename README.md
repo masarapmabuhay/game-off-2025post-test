@@ -46,6 +46,18 @@ Still, at certain angles, such as diagonal, it may appear that the hero's weapon
 
 The game's now a lot easier, because the hero is also a lot more powerful.
 
+4) 20260623; https://masarapmabuhay.itch.io/game-off-2025-post-test3
+
+**Key Lesson Learned:** 
+
+Enemy monsters can now face directly downward or upward when walking, attacking or waiting idly. I had to update the code to clearly identify when the monster should do this instead of facing diagonally. I also had to update the animation frames, because whenever we rotate a monster in eight directions, its head appeared smaller when facing directly upward or downward.
+
+Moreover, enemy monsters now have a new animation frame when the hero deals them damage.
+
+**Unlocked Possibilities:**
+
+We now have more animation frames that can be used as "bones" for various "skins." These can, of course, be further updated.
+
 # Additional Bug Fixes
 
 3) 20260619;<br/> 
