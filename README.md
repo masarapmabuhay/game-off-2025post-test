@@ -58,10 +58,40 @@ Moreover, enemy monsters now have a new animation frame when the hero deals them
 
 We now have more animation frames that can be used as "bones" for various "skins." These can, of course, be further updated.
 
+4) 20260624;
+
+**Key Lesson Learned:** 
+
+Creating variables inside a function that is reused in a loop appears to produce the wrong output. 
+
+More specifically, in the function `executeWraithMonsterWalkingAnimation(...)`, I put the variables inside an array that each monster has and which can be identified using an ID. 
+
+Previously:
+
+`var bIsMonsterFacingUpOrDown=false;`<br/>
+`var bIsMonsterFacingLeftOrRight=false;`<br/>
+`var bIsMonsterFacingUp=false;`<br/>
+`var bIsMonsterFacingLeft=false;`<br/>
+
+Now:
+
+`inputArrayWraithMonsterWithIdCount[MONSTER_IS_FACING_UP_OR_DOWN]=false;`<br/>
+`inputArrayWraithMonsterWithIdCount[MONSTER_IS_FACING_UP]=false;`<br/>
+`inputArrayWraithMonsterWithIdCount[MONSTER_IS_FACING_LEFT_OR_RIGHT]=false;`<br/>
+`inputArrayWraithMonsterWithIdCount[MONSTER_IS_FACING_LEFT]=false;`<br/>
+			
+**Unlocked Possibilities:**
+
+We can now add more animation effects when the hero hits the monster multiple times.
+
+
 # Additional Bug Fixes
 
 3) 20260619;<br/> 
 +updated: shaking to move the screen to the left and the right alternately; instead of only to the right so the margin now appears not only on the left, but also on the right;
+
+4) 20260624;<br/> 
++fixed: portion of the code that makes monster chase the hero in `executeWraithMonsterWalkingAnimation`; appears to have been inadvertently deleted
 
 ## Select Software Development Productivity Tools
 
