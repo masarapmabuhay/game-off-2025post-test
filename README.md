@@ -118,7 +118,7 @@ More death-related animation frames can be added based on the combo count that w
 
 This version removes some of the animation frames like lying down to create a much more solid (not buggy-looking) experience.
 
-9) 20260629; work-in-progress
+9) 20260629; https://masarapmabuhay.itch.io/game-off-2025-post-test6
 
 **Key Lesson Learned:** 
 
