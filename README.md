@@ -118,9 +118,15 @@ More death-related animation frames can be added based on the combo count that w
 
 This version removes some of the animation frames like lying down to create a much more solid (not buggy-looking) experience.
 
+9) 20260629; work-in-progress
+
+**Key Lesson Learned:** 
+
+This version retains the combo count and the hit animation, while commenting out the rest. The code is also less cluttered in that I've put the conditions together in the same `if-else` statement, instead of just inserting them anywhere.
+
 **Unlocked Possibilities:**
 
-A reusable artifact. 
+An easier-to-debug reusable artifact. 
 
 # Additional Bug Fixes
 
